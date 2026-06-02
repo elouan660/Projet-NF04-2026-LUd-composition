@@ -14,17 +14,18 @@ void dispmatrice(double matrice[N][N]) {
     //Boucles pour parcourir la matrice
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            sprintf(buf, " %d ", (int)matrice[i][j]);
+            sprintf(buf, " %d ", (int)matrice[i][j]); //la convertion en int est pour l'affichage, cela peux ne pas être exact selon la matrice mais cela permet de suivre nettement l'avancement
             strcat(chaine, buf); // Concatenne la chaine de caractères
         }
         strcat(chaine, "\n");
     }
-    printf("%s", chaine);
+    printf("%s\n", chaine);
 }
 
 void dispvecteur(double vecteur[N]) {
     for (int i = 0; i < N; i++)
-        printf("%f\n", vecteur[i]);
+        printf("%f\n", vecteur[i]); 
+    printf("\n"); //Pour faire joli à l'affichage
 }
 
 int main() {
