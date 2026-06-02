@@ -100,6 +100,4 @@ int main() {
     }
     printf("vérification du résultat: \n");
     dispvecteur(resultat);
-
-    return 0;
 }
